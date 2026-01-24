@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       <Header/>
-      <Greeter/>
+      <Greeter name="Joseph"/>
+      <Greeter name="Colin"/>
     </>
   );
 }
