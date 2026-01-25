@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Greeter name="Alex" />
+      <Greeter name="Colin" />
       <h2>You are on the home page</h2>
     </div>
   );
