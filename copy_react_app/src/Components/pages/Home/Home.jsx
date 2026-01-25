@@ -1,5 +1,14 @@
+import Greeter from "../../Greeter/Greeter";
+import Header from "../../Header/Header";
+
 function Home() {
-  return <h1>Home!</h1>;
+  return (
+    <div>
+      <Header />
+      <Greeter name="Alex" />
+      <h2>You are on the home page</h2>
+    </div>
+  );
 }
 
 export default Home;
