@@ -4,6 +4,8 @@ import About from "./Components/pages/About/About";
 import Home from "./Components/pages/Home/Home";
 import Contact from "./Components/pages/Contacts/Contacts";
 import Expenses from "./Components/pages/Expenses/Expenses";
+import Poke from "./Components/pages/Poke/Poke";
+
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Link to="/mycontactinfo">Contact me</Link>
         <br />
         <Link to="/expenses">expenses</Link>
+        <br />
+        <Link to="/poke">Pokemon List</Link>
       </nav>
 
       <Routes>
@@ -23,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/mycontactinfo" element={<Contact />} />
         <Route path="/expenses" element={<Expenses />} />
+        <Route path="/poke" element={<Poke />} />
       </Routes>
     </div>
   );
