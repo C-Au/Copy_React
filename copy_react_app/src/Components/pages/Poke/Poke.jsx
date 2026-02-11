@@ -12,7 +12,7 @@ function Poke() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currLink, setCurrLink] = useState(URL);
-  const [nextLink, setLink] = useState(URL);
+  const [nextLink, setNextLink] = useState(URL);
   const [prevLink, setPrevLink] = useState(null);
 
   useEffect(() => {
@@ -21,14 +21,14 @@ function Poke() {
         const resp = await axios.get(currLink);
 
         setLoading(false);
-        if (resp.status !== "200") {
+        if (resp.status !== 200) {
           setError("DID NOT GET 200");
         }
 
         console.log(resp);
 
         console.log(resp.data.next);
-        setLink(resp.data.next);
+        setNextLink(resp.data.next);
         setPrevLink(resp.data.previous);
 
         // make a list of URLs to be used all together
