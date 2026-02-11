@@ -54,6 +54,9 @@ function Poke() {
       }
     }
     loadPoke();
+
+    // Load on inital startup
+    // load again ONLY if currLink changes
   }, [currLink]);
 
   function updateScreenNext() {
