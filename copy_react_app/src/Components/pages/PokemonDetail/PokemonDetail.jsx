@@ -11,9 +11,7 @@ function PokemonDetail() {
   useEffect(() => {
     async function fetchPokemon() {
       try {
-        const resp = await axios.get(
-          `https://pokeapi.co/api/v2/pokemon/${id}`
-        );
+        const resp = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
         setPokemon(resp.data);
         setLoading(false);
       } catch (err) {
@@ -38,7 +36,10 @@ function PokemonDetail() {
       {/* Header */}
       <div className="pokemon-detail-header">
         <img
-          src={pokemon.sprites.other?.["official-artwork"]?.front_default || pokemon.sprites.front_default}
+          src={
+            pokemon.sprites.other?.["official-artwork"]?.front_default ||
+            pokemon.sprites.front_default
+          }
           alt={pokemon.name}
           className="pokemon-detail-img"
         />
@@ -48,7 +49,10 @@ function PokemonDetail() {
           </h1>
           <div className="pokemon-types">
             {pokemon.types.map((t) => (
-              <span key={t.type.name} className={`type-badge type-${t.type.name}`}>
+              <span
+                key={t.type.name}
+                className={`type-badge type-${t.type.name}`}
+              >
                 {t.type.name}
               </span>
             ))}
@@ -60,9 +64,15 @@ function PokemonDetail() {
       <div className="pokemon-info-grid">
         <div className="info-card">
           <h3>Basic Info</h3>
-          <p><strong>Height:</strong> {pokemon.height / 10} m</p>
-          <p><strong>Weight:</strong> {pokemon.weight / 10} kg</p>
-          <p><strong>Base Experience:</strong> {pokemon.base_experience}</p>
+          <p>
+            <strong>Height:</strong> {pokemon.height / 10} m
+          </p>
+          <p>
+            <strong>Weight:</strong> {pokemon.weight / 10} kg
+          </p>
+          <p>
+            <strong>Base Experience:</strong> {pokemon.base_experience}
+          </p>
         </div>
 
         {/* Stats */}
