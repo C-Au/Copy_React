@@ -1,5 +1,6 @@
-import Greeter from "../../Greeter/Greeter";
-import Header from "../../Header/Header";
+
+import Greeter from "../../Components/Greeter/Greeter";
+import Header from "../../Components/Header/Header";
 
 function About() {
   return (

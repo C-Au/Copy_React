@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import PokeCard from "../../PokeCard/PokeCard";
+import PokeCard from "../../Components/PokeCard/PokeCard";
 
 // UPDATE LIMIT VAL TO GET MORE OR LESS RESULTS
 const URL = "https://pokeapi.co/api/v2/pokemon?limit=40";

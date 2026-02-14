@@ -1,11 +1,11 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
-import About from "./Components/pages/About/About";
-import Home from "./Components/pages/Home/Home";
-import Contact from "./Components/pages/Contacts/Contacts";
-import Expenses from "./Components/pages/Expenses/Expenses";
-import Poke from "./Components/pages/Poke/Poke";
-import PokemonDetail from "./Components/pages/PokemonDetail/PokemonDetail";
+import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contacts/Contacts";
+import Expenses from "./pages/Expenses/Expenses";
+import Poke from "./pages/Poke/Poke";
+import PokemonDetail from "./Components/PokemonDetail/PokemonDetail";
 
 
 function App() {

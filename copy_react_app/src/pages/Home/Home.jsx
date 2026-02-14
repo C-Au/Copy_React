@@ -1,6 +1,6 @@
-import Footer from "../../Footer/Footer";
-import Greeter from "../../Greeter/Greeter";
-import Header from "../../Header/Header";
+import Footer from "../../Components/Footer/Footer";
+import Greeter from "../../Components/Greeter/Greeter";
+import Header from "../../Components/Header/Header";
 
 function Home() {
   return (
