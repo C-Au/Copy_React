@@ -42,6 +42,7 @@ function Poke() {
         // Format the responses from all of the pokemon requests
         const formatPoke = pokeResponse.map((res) => {
           return {
+            id: res.data.id,
             name: res.data.name,
             image: res.data.sprites.front_default,
           };
@@ -82,7 +83,7 @@ function Poke() {
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}>
         {pokemon.map((p) => {
-          return <PokeCard name={p.name} image={p.image} key={p.name} />;
+          return <PokeCard id={p.id} name={p.name} image={p.image} key={p.name} />;
         })}
       </div>
     </div>

@@ -1,9 +1,11 @@
-function PokeCard({name, image}) {
+import { Link } from "react-router-dom";
+
+function PokeCard({id, name, image}) {
     return (
-        <div className="poke-card">
+        <Link to={`/poke/${id}`} className="poke-card" style={{ textDecoration: "none", color: "inherit" }}>
             <p>{name}</p>
             <img src={image} alt={name} />
-        </div>
+        </Link>
     )
 }
 

@@ -5,6 +5,7 @@ import Home from "./Components/pages/Home/Home";
 import Contact from "./Components/pages/Contacts/Contacts";
 import Expenses from "./Components/pages/Expenses/Expenses";
 import Poke from "./Components/pages/Poke/Poke";
+import PokemonDetail from "./Components/pages/PokemonDetail/PokemonDetail";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/mycontactinfo" element={<Contact />} />
         <Route path="/expenses" element={<Expenses />} />
         <Route path="/poke" element={<Poke />} />
+        <Route path="/poke/:id" element={<PokemonDetail />} />
       </Routes>
     </div>
   );
