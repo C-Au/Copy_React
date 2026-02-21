@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import axios from "axios";
 
 function SinglePoke() {
@@ -10,7 +9,7 @@ function SinglePoke() {
   useEffect(() => {
     async function fetchPokemon() {
       try {
-        const resp = await axios.get(`https://pokeapi.co/api/v2/pokemon/1/`);
+        const resp = await axios.get("https://pokeapi.co/api/v2/pokemon/1/");
         setPokemon(resp.data);
         setLoading(false);
       } catch (err) {
@@ -20,7 +19,7 @@ function SinglePoke() {
       }
     }
     fetchPokemon();
-  });
+  }, []);
 
   if (loading) return <h2>LOADING ...</h2>;
   if (error) return <p>{error}</p>;
@@ -28,10 +27,10 @@ function SinglePoke() {
 
   return (
     <div>
-     <p>{name}</p>
-            <img src={image} alt={name} />
-            </div>
-  )
+      <h1>Single Pokemon</h1>
+      <p>{pokemon.name}</p>
+    </div>
+  );
 }
 
 export default SinglePoke;
