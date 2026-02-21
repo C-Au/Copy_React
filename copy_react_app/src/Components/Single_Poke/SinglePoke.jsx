@@ -25,6 +25,13 @@ function SinglePoke() {
   if (loading) return <h2>LOADING ...</h2>;
   if (error) return <p>{error}</p>;
   if (!pokemon) return null;
+
+  return (
+    <div>
+     <p>{name}</p>
+            <img src={image} alt={name} />
+            </div>
+  )
 }
 
 export default SinglePoke;
