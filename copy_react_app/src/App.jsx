@@ -6,7 +6,7 @@ import Contact from "./pages/Contacts/Contacts";
 import Expenses from "./pages/Expenses/Expenses";
 import Poke from "./pages/Poke/Poke";
 import PokemonDetail from "./Components/PokemonDetail/PokemonDetail";
-
+import SinglePokePage from "./Components/Single_Poke/SinglePoke"
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Link to="/expenses">expenses</Link>
         <br />
         <Link to="/poke">Pokemon List</Link>
+        <br />
+        <Link to="/singlepoke">Single Pokemon</Link>
       </nav>
 
       <Routes>
@@ -30,6 +32,7 @@ function App() {
         <Route path="/expenses" element={<Expenses />} />
         <Route path="/poke" element={<Poke />} />
         <Route path="/poke/:id" element={<PokemonDetail />} />
+        <Route path="/singlepoke" element={<SinglePokePage />} />
       </Routes>
     </div>
   );
