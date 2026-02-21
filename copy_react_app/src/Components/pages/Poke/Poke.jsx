@@ -3,7 +3,7 @@ import axios from "axios";
 import PokeCard from "../../PokeCard/PokeCard";
 
 // UPDATE LIMIT VAL TO GET MORE OR LESS RESULTS
-const URL = "https://pokeapi.co/api/v2/pokemon?limit=40";
+const URL = "https://pokeapi.co/api/v2/pokemon?limit=1";
 
 // explain the concepts and ideas in this doc in a very simple way that a 12 year old can understand at a basic and then complex level
 
