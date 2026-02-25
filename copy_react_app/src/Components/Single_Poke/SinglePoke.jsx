@@ -25,10 +25,13 @@ function SinglePoke() {
   if (error) return <p>{error}</p>;
   if (!pokemon) return null;
 
+  console.log(pokemon);
+
   return (
     <div>
       <h1>Single Pokemon</h1>
       <p>{pokemon.name}</p>
+      <img src={pokemon.sprites.back_default} alt="back default" />
     </div>
   );
 }
