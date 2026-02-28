@@ -32,6 +32,7 @@ function SinglePoke() {
       <h1>Single Pokemon</h1>
       <p>{pokemon.name}</p>
       <img src={pokemon.sprites.back_default} alt="back default" />
+      <p>Types: {pokemon.types.map((t) => t.type.name).join(", ")}</p>
     </div>
   );
 }
