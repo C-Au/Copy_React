@@ -38,7 +38,7 @@ function Expenses() {
       <h1>Expense data</h1>
 
       {expList.map((expense, index) => {
-        const { name, message, email } = expense || {};
+        const { date, description, category } = expense || {};
 
         return (
           <div
@@ -49,9 +49,9 @@ function Expenses() {
               marginBottom: "8px",
             }}
           >
-            <p>{name ?? "No name provided"}</p>
-            <p>{message ?? "No message provided"}</p>
-            <p>{email ?? "No email provided"}</p>
+            <p>{date ?? "No date provided"}</p>
+            <p>{description ?? "No description provided"}</p>
+            <p>{category ?? "No category provided"}</p>
           </div>
         );
       })}
