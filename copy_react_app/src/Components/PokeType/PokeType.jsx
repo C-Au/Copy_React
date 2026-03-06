@@ -29,11 +29,9 @@ function PokeType({ typeName, url }) {
   return (
     <div style={{ border: "1px solid black", padding: "1rem", margin: "1rem" }}>
       <p>{typeName}</p>
-      {/* LOOP OVER THE ARRAY WITH A MAP INSTEAD OF HARDCODING THE INDEX VALYES
-      <p>{typeObj.moves[0].name}</p>
-      <p>{typeObj.moves[1].name}</p>
-      <p>{typeObj.moves[2].name}</p>
-      */}
+      {typeObj.moves.slice(0, 5).map((move) => (
+        <p key={move.name}>{move.name}</p>
+      ))}
     </div>
   );
 }

@@ -38,7 +38,7 @@ function SinglePoke() {
       <p>Types: {pokemon.types.map((t) => t.type.name).join(", ")}</p>
 
       {pokemon.types.map((t) => (
-        <PokeType key={t.type.name} typeName={t.type.name} url={t.type.urlx} />
+        <PokeType key={t.type.name} typeName={t.type.name} url={t.type.url} />
       ))}
     </div>
   );
