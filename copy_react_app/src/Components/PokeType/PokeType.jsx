@@ -19,7 +19,7 @@ function PokeType({ typeName, url }) {
       }
     }
     fetchPokemon();
-  }, []);
+  }, [url]);
 
   if (loading) return <h2>LOADING ...</h2>;
   if (error) return <p>{error}</p>;
